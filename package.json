@@ -1,0 +1,26 @@
+{
+  "name": "base64-lite",
+  "version": "0.1.0",
+  "description": "A polyfill built upon atob/btoa (browser side only) so as to support base64 to/from binary (Uint8Array/ArrayBuffer) conversion",
+  "main": "base64-lite.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tibetty/base64-lite.git"
+  },
+  "keywords": [
+    "base64",
+    "binary",
+    "browser",
+    "atob",
+    "btoa"
+  ],
+  "author": "tibetty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tibetty/base64-lite/issues"
+  },
+  "homepage": "https://github.com/tibetty/base64-lite#readme"
+}
