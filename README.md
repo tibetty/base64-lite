@@ -1,4 +1,4 @@
-# base64-lite
+# base64-binary
 
 A polyfill built upon **atob/btoa** (browser) so as to support base64 to/from binary (Uint8Array/ArrayBuffer) conversion
 
