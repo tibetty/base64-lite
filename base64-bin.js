@@ -1,8 +1,12 @@
 'use strict';
 
 (() => {
-    if (window.atob && window.btoa) {
-        window.base64 = {
+    if (window && window.atob && window.btoa) {
+        if (!window.base64) {
+            window.base64 = {};
+        }
+
+        Object.assign(window.base64, {
             decode: (base64) => {
                 const s = window.atob(base64);
                 const rs = new Uint8Array(s.length);
@@ -19,6 +23,6 @@
                     return window.btoa(byteArray.reduce((s, b) => s + String.fromCharCode(b), ''));
                 }
             }
-        };
+        });
     }
 })();
