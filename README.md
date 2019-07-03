@@ -4,7 +4,7 @@ A polyfill built upon **atob/btoa** (browser) so as to support base64 to/from bi
 
 ## Motivation
 
-The built-in **atob** and **btoa** functions don't support encoding binary (typically in **Uint8Array** or **ArrayBuffer** types) to base64 string and decoding base64 string to bindary, although they actually have done the right work, and this polyfill is designed to bridge this gap by adding extra translation between **String** and **Uint8Array** 
+It seems that the built-in **atob** and **btoa** functions don't support encoding binary (**Uint8Array** or **ArrayBuffer**) to base64 string and decoding base64 string to binary directly.  However, with the help of this polyfill which adds a thin layer to make extra conversion between **String** and **Uint8Array**, we can make it by standing on the shoulders of giants. 
 
 ## Usage
 
