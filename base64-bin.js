@@ -22,6 +22,8 @@
                 if (byteArray instanceof Uint8Array) {
                     return window.btoa(byteArray.reduce((s, b) => s + String.fromCharCode(b), ''));
                 }
+
+                throw new Error('Unsupported parameter type: ' + typeof byteArray);
             }
         });
     }

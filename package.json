@@ -17,6 +17,9 @@
     "atob",
     "btoa"
   ],
+  "devDependencies": {
+    "uglify-js": "^3.14.5"
+  },
   "author": "tibetty",
   "license": "ISC",
   "bugs": {
